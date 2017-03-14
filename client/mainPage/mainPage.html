@@ -3,19 +3,21 @@
 <div class='child' ng-controller="MainPageController">
 
 
-    There is a Message For You:
+    Be Inspired:
     <br>
     <br>
-    <button ng-click="getOneMessage()">Mail Icon Goes Here</button>
-    <div>{{ displayedMessage }}</div>
-        <br>
+    <button ng-click="getOneMessage()">Click Me!</button>
+    <br>
+    <br>
+    <br>
+    <div class="message">{{ displayedMessage }}</div>
     <br>
     <br>
 
 
   <form ng-submit="leaveMessage()">
-    Leave a Message:<br><br>
-    <input type="text" placeholder="Did you remember to smell the roses today?" ng-model="messageLeft">
+    Inspire Others:<br><br>
+    <input type="text" placeholder="Your Unique Message" ng-model="messageLeft">
     <br>
     <br>
     <input type="submit" value="Send">

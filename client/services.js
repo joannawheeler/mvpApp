@@ -18,10 +18,10 @@ angular.module('mvp.services', [])
   var getMessage = function() {
     return $http({
       method: 'GET',
-      url: 'api/oneMessage',
+      url: 'api/oneMessage'
     })
     .then(function (resp) {
-      console.log('gets back')
+      // console.log('gets back')
       return resp.data
     })
   }

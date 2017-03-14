@@ -9,8 +9,8 @@ app.use(express.static(__dirname + '/../client'));
 app.use(bodyParser.json());
 
 // make sure the end directory is the name of the db u create in mongo shell
-mongoose.connect('mongodb://joanna:joanna@ds131340.mlab.com:31340/mvp-app');
-mongodb://joanna:joanna@ds131340.mlab.com:31340/mvp-app
+mongoose.connect('mongodb://joanna:joanna@ds131340.mlab.com:31340/heroku_lr67nngn');
+//mongodb://joanna:joanna@ds131340.mlab.com:31340/mvp-app
 
 var db = mongoose.connection;
 

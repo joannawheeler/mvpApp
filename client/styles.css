@@ -41,3 +41,9 @@ h1 {
 .child {
   margin-top: 60px;
 }
+
+.message {
+  font-size: 40px;
+  margin-left: 10cm;
+  margin-right: 10cm;
+}
