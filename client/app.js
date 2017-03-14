@@ -1,13 +1,16 @@
 angular.module('mvp', [
+  'mvp.mainPage',
+  'mvp.services',
   'ngRoute'
   ])
-
-// .config(function($routeProvider) {
-//   $routeProvider.when('/', {
-//     controller: ''
-//     templateUrl: ''
-//   })
-//   .otherwise({
-//   redirectTo: '/'
-//   })
-// })
+.config(function ($routeProvider,$locationProvider) {
+$locationProvider.hashPrefix('');
+$routeProvider
+.when('/', {
+    controller: 'MainPageController',
+    templateUrl: './mainPage/mainPage.html'
+  })
+  .otherwise({
+  redirectTo: '/'
+  })
+})

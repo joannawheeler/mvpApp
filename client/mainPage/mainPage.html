@@ -1,0 +1,26 @@
+
+
+<div class='child' ng-controller="MainPageController">
+
+
+    There is a Message For You:
+    <br>
+    <br>
+    <button ng-click="getOneMessage()">Mail Icon Goes Here</button>
+    <div>{{ displayedMessage }}</div>
+        <br>
+    <br>
+    <br>
+
+
+  <form ng-submit="leaveMessage()">
+    Leave a Message:<br><br>
+    <input type="text" placeholder="Did you remember to smell the roses today?" ng-model="messageLeft">
+    <br>
+    <br>
+    <input type="submit" value="Send">
+  </form>
+
+
+
+</div>

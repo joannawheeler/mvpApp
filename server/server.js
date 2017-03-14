@@ -8,13 +8,13 @@ app.use(express.static(__dirname + '/../client'));
 
 app.use(bodyParser.json());
 
-//make sure the end directory is the name of the db u create in mongo shell
-// mongoose.connect('mongodb://localhost/mvpApp');
+// make sure the end directory is the name of the db u create in mongo shell
+mongoose.connect('mongodb://localhost/mvpApp');
 
-// var db = mongoose.connection;
+var db = mongoose.connection;
 
 
-// require('./routes.js')(app, express);
+require('./routes.js')(app, express);
 
 
 
