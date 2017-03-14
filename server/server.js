@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/../client'));
 app.use(bodyParser.json());
 
 // make sure the end directory is the name of the db u create in mongo shell
-mongoose.connect('mongodb://localhost/mvpApp');
+mongoose.connect('mongodb://vast-ocean-24050.herokuapp.com/');
 
 var db = mongoose.connection;
 
